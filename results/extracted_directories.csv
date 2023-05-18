@@ -1,0 +1,24 @@
+directory,count
+"['/proc/cpuinfo', '~']",10799
+[],460
+"['/proc/cpuinfo', '/var/tmp/.var03522123']",159
+"['/mnt', '/tmp', '/;', '/var/run', '/root']",150
+['/proc/cpuinfo;'],80
+['/tmp'],66
+"['/;', '/tmp', '/run']",66
+['/proc/cpuinfo'],58
+"['/mnt', '/tmp', '/;', '/var/run', '/root', 'uYtea.x86_64']",25
+['/etc/issue'],23
+"['/mnt', '/tmp', 'xjSq.x86_64', '/;', '/var/run', '/root']",15
+"['.ssh/.auth_k', '.ssh/authorized_keys|grep']",12
+['/tmp;'],11
+"['/proc/cpuinfo', '/var/tmp/.systemcache436621;', '/var/tmp/.var03522123', '/var/tmp;']",10
+['/proc/uptime'],9
+['/var/tmp;'],5
+"['/mnt', '/tmp', 'vps.sh', '/;', '/var/run', '/root', '/etc/issue;']",2
+"['/mnt', '/tmp', '/;', '/var/run', 'uYtea.x86', '/root']",2
+"['/tmp;', '/var;']",1
+"['/var/tmp/.var03522123', '/var/tmp/.systemcache436621;', '/proc/cpuinfo', '~', '/var/tmp;']",1
+['x86'],1
+"['x86', '/etc/issue']",1
+['/;'],1
