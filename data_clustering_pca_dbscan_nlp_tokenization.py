@@ -7,7 +7,7 @@ import pandas as pd
 import os
 import matplotlib.pyplot as plt
 from sklearn.cluster import DBSCAN
-from sklearn.decomposition import TruncatedSVD
+import umap
 from config import RESULT_PATH, DATA_PATH
 from typing import Tuple
 
@@ -87,17 +87,17 @@ def plot_dbscan(model: DBSCAN, data: np.array) -> None:
     :param data: The vectorized commands data
     :return: None. Save the plot to a png file
     """
-    # Reduce dimensions to 2D using TruncatedSVD, for memory efficiency
-    svd = TruncatedSVD(n_components=2)
-    reduced_data = svd.fit_transform(data)
+    # Reduce dimensions with UMAP:
+    reducer = umap.UMAP()
+    reduced_data = reducer.fit_transform(data)
     # Get labels
     labels = model.labels_
     # Create a scatter plot
     plt.figure(figsize=(8, 6))
     plt.scatter(reduced_data[:, 0], reduced_data[:, 1], c=labels, cmap='viridis')
     plt.title('DBSCAN clustering with dimensionality reduction', fontsize=16)
-    plt.xlabel('Principal Component 1', fontsize=12)
-    plt.ylabel('Principal Component 2', fontsize=12)
+    plt.xlabel('UMAP 1', fontsize=12)
+    plt.ylabel('UMAP 2', fontsize=12)
     # remove ticks, since it's not meaningful here
     plt.tick_params(axis='both', which='both', bottom=False, top=False, labelbottom=False, right=False, left=False,
                     labelleft=False)
