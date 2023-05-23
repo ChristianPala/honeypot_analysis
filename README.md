@@ -1,4 +1,4 @@
-# honeypot_analysis# Honeypot Analysis
+# Honeypot Analysis
 
 Honeypot Analysis is a project dedicated to understanding and categorizing the types of attacks seen in honeypot logs. 
 This repository includes all of the code used for this analysis.
